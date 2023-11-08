@@ -1,0 +1,83 @@
+@import './css_reset';
+@import './variables';
+@import './general';
+@import './main_menu.scss';
+@import './form.scss';
+@import './table.scss';
+
+body {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: $--color-app-background;
+  color: $--color-text-primary;
+}
+.container {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  font-size: 13px;
+  color: #9aa7b0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-image: none !important;
+  background-color: #6fc247 !important;
+  border-radius: 4px !important;
+  color: white !important;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+.btn-outline {
+  background-image: none !important;
+  border-color: #6fc247 !important;
+  border-radius: 4px !important;
+  color: #6fc247 !important;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  border: 1px solid;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.mw-none {
+  max-width: none !important;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.my-auto {
+  margin: auto 10px auto 0;
+  line-height: 0px;
+}
+.w-10 {
+  width: 8px;
+  margin-right: 5px;
+}
+
+.book-icon {
+  width: 18px;
+  color: #202020;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.txt-end {
+  text-align: end;
+}
