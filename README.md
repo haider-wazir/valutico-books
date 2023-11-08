@@ -14,9 +14,11 @@
     - [`/login`](#login)
     - [`/logout`](#logout)
   - [GraphQL](#auth)
-    - [Queries](#2-qqueries)
-    - [Mutations](#2-mutations)
-    - [InputType](#2-input-type)
+    - [Mutations](#mutations)
+    - [Queries](#queries)
+    - [InputTypes](#input-types)
+    - [OutputTypes](#output-types)
+
 
 ## Running app
 
@@ -98,7 +100,7 @@ curl -XDELETE -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0Iiwic2N
 
 **Response**: nothing
 
-### Queries
+### Mutations
 
 **Create book**:
 
@@ -134,6 +136,7 @@ mutation {
   }
 }
 ```
+### Queries
 
 **Fetch current_user's books**
 
@@ -193,7 +196,7 @@ query{
 }
 ```
 
-**Input type**:
+### Input types
 
 ```
 argument :title, String, required: true
@@ -201,7 +204,7 @@ argument :author, String, required: true
 argument :publication_date, GraphQL::Types::ISO8601Date, required: true
 ```
 
-**Output type**:
+### Output types
 
 ```
 field :id, ID, null: false
